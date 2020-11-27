@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Michelle Zhang | Creative Code</title>
+	<meta name="description" content="Computer science student at Carnegie Mellon University." />
+	<meta http-equiv="author" content="Michelle Zhang" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="images/home-background.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173824486-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-173824486-1');
+	</script>
+</head>
+
+
+<body id="white" onload="document.body.style.opacity='1'">
+	<div id="mySidenav" class="sidenav-proj">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">01. home</a>
+		<a href="projects.html" id="navcurr">&#8212; 02. projects</a>
+		<a href="about.html">03. about</a>
+		<a href="contact.html">04. contact</a>
+	</div>
+
+	<div id="header-block-white">
+		<span style="font-size:30px; cursor:pointer;" onclick="openNav()">
+			<h2> &nbsp; &nbsp; &#9776;&nbsp; &nbsp; navigation</h2>
+	</div>
+
+	<div class="main-proj">
+		<a class="link" href="projects.html"> &#10229; back to all projects</a>
+
+		<h1 class="pad-top" id="big-proj-heading">creative coding<img src="images/origami.png" class="header-icon"></h1>
+		<p>&#8729; independent computer graphics projects</p>
+		<p>&#8729; 2018 - present</p>
+
+		<div class="cards-op">
+			<div class="card-op">
+				<h3 class="proj-heading">overview</h3>
+				<p class="proj-text">The intersection of art and computing fascinates me. Since 2018, I have
+					independently created multiple sketches on
+					Open Processing, which is an online platform and community that allows for the creation of creative,
+					visual programs.<br><br>
+
+					My sketches involve a combination of
+					computer-generated art, randomization (including random word and color generators), algorithmic
+					design,
+					and user interaction with keyboard and mouse. <br><br>
+
+					Open Processing uses the p5.js library of JavaScript, which is a self-taught skill I continue to
+					develop in my
+					spare
+					time.</p>
+
+				<h3 class="proj-heading-mini">skills</h3>
+				<p>JavaScript &nbsp; &#8729; &nbsp; interactive graphics &#8729; &nbsp; randomization </p>
+				<h3 class="proj-heading-mini">tools</h3>
+				<p>Open Processing &nbsp; &#8729; &nbsp; p5.js</p>
+				<h3 class="proj-heading-mini"> more</h3>
+				<p class="proj-text">For all of my Open Processing projects, and to interact with them in real time,
+					click <a target="_blank" rel="noopener noreferrer" class="link"
+						href="https://www.openprocessing.org/user/131235"><span class="highlight">here</a>.</p></span>
+
+			</div>
+			<div class="card-op">
+				<img src="images/theartof.gif" class="theartofgif" />
+				<p class="desc">Demo of <i>the art of,</i> which simulates paper folding using random generation of
+					shapes. The positions of the graphics follow the user's mouse. When the user clicks, a randomly
+					generated phrase and paper crane are shown.</p>
+			</div>
+		</div>
+
+
+		<p class="copy-normal"> made with &#x2665; by michelle zhang / 2020 &emsp; &emsp; &emsp; &emsp;
+
+			<script>
+				function openNav() {
+					document.getElementById("mySidenav").style.width = "350px";
+				}
+
+				function closeNav() {
+					document.getElementById("mySidenav").style.width = "0";
+				}
+			</script>
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Michelle Zhang | About</title>
+	<meta name="description" content="Computer science student at Carnegie Mellon University." />
+	<meta http-equiv="author" content="Michelle Zhang" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="images/home-background.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173824486-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-173824486-1');
+	</script>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">01. home</a>
+		<a href="projects.html">02. projects</a>
+		<a href="about.html" id="navcurr">&#8212; 03. about</a>
+		<a href="contact.html">04. contact</a>
+	</div>
+
+	<div id="header-block">
+		<span style="font-size:30px; cursor:pointer;" onclick="openNav()">
+			<h2> &nbsp; &nbsp; &#9776;&nbsp; &nbsp; navigation</h2>
+	</div>
+
+	<div class="main">
+		<div class="cards">
+			<div class="card">
+				<h3>tl;dr</h3>
+				<div class="banner">
+					<div class="typed_wrap">
+						<h1>i'm <span class="highlight"><span class="typed"></span></span></h1>
+					</div>
+				</div>
+				<h3>computer science student @ <br> carnegie mellon</h3>
+				<h4 class="wave">&#12336;&#12336;&#12336;&#12336;</h4>
+				<span class="highlight"><a
+						href="https://drive.google.com/file/d/1kVJnEJxXGIqruOmKy7nTE9uqBL7spPap/view?usp=sharing"
+						class="name" target="_blank" rel="noopener noreferrer">resume</a></span>
+			</div>
+			<div class="card">
+				I'm a sophomore from Buffalo, New York studying <span id="emphasis"><strong>computer
+						science</strong></span> at <span id="emphasis"><strong>Carnegie Mellon
+						University,</strong></span> with a concentration in <span id="emphasis"><strong>human-computer
+						interaction.</strong></span> <br><br>
+				I've always been fascinated by the convergence of design
+				and computing, and even more so by the constantly evolving role of humans in the picture. Recently, I've
+				been passionate about educating myself on living sustainably and
+				endlessly curious about how we can use software engineering, virtual interaction, and user-centered design for social impact.
+				<br> <br>I'm
+				incessantly looking for the new: be it finding unconventional ways to solve problems or discovering new
+				music. In
+				my spare time, you'll find me trying interesting recipes, listening to podcasts on long walks,
+				or making handmade cards for my friends.
+
+				<h2 class="name">contact me <span class="highlight"><a href="contact.html" class="name">here</a></span>
+					or at the links below:</h2>
+				<div id="socialicons">
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://www.linkedin.com/in/michellezhang1015/"><img src="images/linkedin.svg"
+							class="svg-color" /></a> &emsp;
+					<a target="_blank" rel="noopener noreferrer" href="mailto:mwzhang@andrew.cmu.edu"><img
+							src="images/email.svg" class="svg-color" /></a>
+				</div>
+
+				<p class="copy-normal"> made with &#x2665; by michelle zhang / 2020</p>
+
+			</div>
+		</div>
+
+		<script>
+			$(function () {
+				$(".typed").typed({
+					strings: ["a developer", "a goal-setter", "a designer", "michelle."],
+					stringsElement: null,
+					typeSpeed: 30,
+					startDelay: 120,
+					backSpeed: 20,
+					backDelay: 200,
+					loop: true,
+					loopCount: 10,
+					showCursor: false,
+					cursorChar: "|",
+					attr: null,
+					contentType: 'html',
+				});
+			});
+
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "350px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+</body>
+</html>

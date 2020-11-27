@@ -1,0 +1,6 @@
+To: %MailTo
+From: %Email
+Subject: %Subject
+
+ Message:
+%Message

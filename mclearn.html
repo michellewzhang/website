@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Michelle Zhang | McLearn Lab Website</title>
+	<meta name="description" content="Computer science student at Carnegie Mellon University." />
+	<meta http-equiv="author" content="Michelle Zhang" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="images/home-background.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173824486-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-173824486-1');
+	</script>
+</head>
+
+<body id="white" onload="document.body.style.opacity='1'">
+	<div id="mySidenav" class="sidenav-proj">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">01. home</a>
+		<a href="projects.html" id="navcurr">&#8212; 02. projects</a>
+		<a href="about.html">03. about</a>
+		<a href="contact.html">04. contact</a>
+	</div>
+
+	<div id="header-block-white">
+		<span style="font-size:30px; cursor:pointer;" onclick="openNav()">
+			<h2> &nbsp; &nbsp; &#9776;&nbsp; &nbsp; navigation</h2>
+	</div>
+
+	<div class="main-proj">
+		<a class="link" href="projects.html"> &#10229; back to all projects</a>
+
+		<h1 class="pad-top" id="big-proj-heading">responsive web<img src="images/html.png" class="header-icon"></h1>
+		<p>&#8729; web + content management system development</p>
+		<p>&#8729; summer 2020</p>
+
+		<div class="cards-op">
+			<div class="card-op">
+				<h3 class="proj-heading">overview</h3>
+				<p class="proj-text">From May to July 2020, I had the opportunity to work with
+					the McLearn Lab (Human-Computer Interaction Institute at Carnegie Mellon University)
+					to design and develop a responsive lab website featuring
+					the lab's projects, members, publications, and news. To manage the large amount of data
+					on the site, I also created a content management system (CMS), which can be easily
+					navigated by those with no familiarity with web development.<br><br>
+
+					The frontend of both projects were implemented entirely using Angular,
+					with particular emphasis on implementing Angular Material.
+					<br><br>
+
+					As the only intern working on the website, most of the development and design
+					was my responsibility. My mentor aided with backend-related aspects including building and deploying
+					APIs storing lab data and implementing HTTP interceptors for authorization. I developed the
+					frontend, integrated the APIs, and created the CMS.<br><br></p>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading-mini">role</h3>
+				<p class="proj-text">front end intern</p>
+				<h3 class="proj-heading-mini">skills</h3>
+				<p class="proj-text">TypeScript / Javscript &nbsp; &#8729; &nbsp; HTML + CSS &nbsp; &#8729; &nbsp;
+					responsive web design &nbsp; &#8729; &nbsp; integrating RESTful APIs</p>
+				<h3 class="proj-heading-mini">tools</h3>
+				<p class="proj-text">Angular &nbsp; &#8729; &nbsp; Git &nbsp; &#8729; &nbsp; Postman &nbsp; &#8729;
+					&nbsp; Jira</p>
+			</div>
+		</div>
+		<div class="cards-op">
+			<div class="card-op">
+				<h3 class="proj-heading">design conception</h3>
+				<p class="proj-text">An abundance of independent research went into
+					the finalized design of the website. I had
+					key features in mind:</p>
+				<ul>
+					<li>
+						responsiveness
+					</li><br>
+					<li>
+						simple, modern, and professional interface
+					</li><br>
+					<li>
+						consistent design throughout website
+					</li><br>
+					<li>
+						minimize scrolling
+					</li><br>
+					<li>
+						fixed navigation or tabs
+					</li><br>
+				</ul>
+				<p class="proj-text">Along with exploring various university lab websites to
+					understand the standard content and verbiage, as well as to note
+					what features I liked and disliked, I created a mock website to test
+					potential design concepts.
+					I met with the lab members and other interns to ask for feedback
+					before finalizing the design.
+				</p>
+			</div>
+			<div class="card-op">
+				<div class="img-container">
+					<img src="images/iphone_x.png" class="mockup">
+					<p class="desc">Final landing page: mobile version</p>
+				</div>
+			</div>
+		</div>
+		<div class="cards-op">
+			<div class="card-op">
+				<div class="img-container">
+					<img src="images/macbook.png" class="mockup-laptop">
+					<p class="desc">Final landing page: desktop / laptop version</p>
+				</div>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">implementing responsiveness</h3>
+				<p class="proj-text">As technology continues to evolve, we will continue to
+					see the increasing necessity of designing flexible and adaptable products.
+					Responsive web design ensures that an application will both look
+					appealing and still be functional on various screen sizes.</p>
+
+				<p class="proj-text">Responsive tools involved in this project include</p>
+				<ul>
+					<li>
+						CSS media queries
+					</li><br>
+					<li>
+						Angular Material + flex layout
+					</li><br>
+					<li>
+						Google DevTools device mode
+					</li><br>
+				</ul>
+				<p class="proj-text">I designed with standard sizes of mobile phones,
+					tablets, laptops, and desktops in mind. The experience taught me
+					that developing for
+					responsiveness involves hours and hours of testing,
+					experimenting, and sometimes, completely redesigning.
+				</p>
+			</div>
+		</div>
+		<div class="cards-op">
+			<div class="card-op">
+				<h3 class="proj-heading">content management: connecting frontend & backend</h3>
+				<p class="proj-text">Having a CMS allows those without web dev knowledge
+					to edit the content of websites. It's essentially a link between the frontend and backend:
+					data is loaded from the backend to the CMS, and all changes (HTTP requests) made in the CMS
+					are subsequently updated in the backend and synchronously reflected on the frontend of the website.
+				</p>
+				<p class="proj-text">Key features of the CMS include
+				</p>
+				<ul>
+					<li>
+						ability to edit, add, and delete content quickly
+					</li><br>
+					<li>
+						organized, intuitive, and easily navigable UI
+					</li><br>
+					<li>
+						authentication / login page to protect content
+					</li><br>
+				</ul>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">data representation</h3>
+				<p class="proj-text">With the task of displaying data comes the challenge
+					of deciding how to represent it. My mentor and I went through several
+					rounds of redesigning the data objects for each page of the website. As
+					each page had different data, each would need a distinct representation.
+					Each time new issues arised, we realized
+					that certain changes to the representation were necessary.
+				</p>
+				<p class="proj-text">Some changes were as small as adding a new property
+					to an object, while others were drastic and required a completely new structure &#8212;
+					which meant the frontend would need to be redesigned also.
+				</p>
+
+				<p class="proj-text">Trial-and-error, testing,
+					and patience played a key role in the entire integration process.
+				</p>
+			</div>
+		</div>
+		<div class="cards-op">
+			<div class="card-op">
+				<h3 class="proj-heading"><img src="images/star.png" class="header-icon-concluding">concluding thoughts
+				</h3>
+				<p class="proj-text">I found this experience truly rewarding:
+					I taught myself the basics of Angular, gained experience in testing
+					and integrating RESTful APIs, familiarized myself
+					with the state of educational technology research,
+					read and discussed several research papers with lab members and fellow interns,
+					and developed a functional and responsive website and CMS, all within three months.<br><br>
+
+					Throughout those three months, I met a number of challenges and worked my way around them &#8212;
+					albeit sometimes by taking unconventional routes. Finally, I've vastly improved my knowledge on
+					responsive design,
+					which I will undoubtedly take with me into the future.
+				</p>
+			</div>
+		</div>
+
+		<p class="copy-normal"> made with &#x2665; by michelle zhang / 2020 &emsp; &emsp; &emsp; &emsp;
+
+			<script>
+				function openNav() {
+					document.getElementById("mySidenav").style.width = "350px";
+				}
+
+				function closeNav() {
+					document.getElementById("mySidenav").style.width = "0";
+				}
+			</script>
+
+</body>
+
+
+
+
+</html>

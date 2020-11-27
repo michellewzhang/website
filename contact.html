@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Michelle Zhang | Contact</title>
+    <meta name="description" content="Computer science student at Carnegie Mellon University." />
+    <meta http-equiv="author" content="Michelle Zhang" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/home-background.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173824486-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173824486-1');
+    </script>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">01. home</a>
+        <a href="projects.html">02. projects</a>
+        <a href="about.html"> 03. about</a>
+        <a href="contact.html" id="navcurr">&#8212; 04. contact</a>
+    </div>
+
+    <div id="header-block">
+        <span style="font-size:30px; cursor:pointer;" onclick="openNav()">
+            <h2> &nbsp; &nbsp; &#9776;&nbsp; &nbsp; navigation</h2>
+    </div>
+
+    <div class="main">
+        <h1 class="pad-top">say hello</h1>
+        <form id="my-form" name="my-form" method="post" action="https://www.cmu.edu/cgi-bin/mailto">
+            <input name="MailTo" type="hidden" value="mwzhang@andrew.cmu.edu" />
+            <input name="RedirectURL" type="hidden" value="http://www.andrew.cmu.edu/user/mwzhang/submitted.html" />
+            <input name="EmailForm" type="hidden" value="http://www.andrew.cmu.edu/user/mwzhang/webform.txt" />
+            <p>email <input name="Email" type="text" /></p>
+            <p>subject <input name="Subject" type="text" /></p>
+            <p>message <textarea name="Message"></textarea></p>
+            <p><input type="submit" name="Submit" value="Submit" /></p>
+        </form>
+        <p class="copy-normal"> made with &#x2665; by michelle zhang / 2020</p>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
