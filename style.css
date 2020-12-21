@@ -437,12 +437,6 @@ p.proj-text {
   position: relative;
 }
 
-.about-img {
-  max-width: 40vw;
-  min-width: 30vw;
-  padding: 10px;
-}
-
 .overlay {
   position: absolute;
   top: 0;
