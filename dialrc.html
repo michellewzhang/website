@@ -17,7 +17,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'UA-173824486-1');
 	</script>
 </head>
@@ -40,41 +39,101 @@
 	<div class="main-proj">
 		<a class="link" href="projects.html"> &#10229; back to all projects</a>
 
-		<h1 class="pad-top" id="big-proj-heading">dialog schema builder<img src="images/flow.png" class="header-icon"></h1>
-		<p>&#8729; full stack development of a drag-and-drop based application to build & test dialog schema</p>
-		<p>&#8729; sept 2020 - present</p>
+		<h1 class="pad-top" id="big-proj-heading">dialog schema builder<img src="images/flow.png" class="header-icon">
+		</h1>
+		<p>&#8729; full stack development of an application used to build & test dialog schema</p>
+		<p>&#8729; sept 2020 - dec 2020</p>
 
-		
+
 		<div class="cards-op">
 			<div class="card-op">
 				<div class="img-container">
-					<img src="images/prototype_1.png" class="mockup-laptop">
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://raw.githubusercontent.com/michellewzhang/schema/main/assets/thumbnail.png">
+						<img src="images/dialrc_thumbnail.png" class="mockup-laptop">
+					</a>
+					<p class="desc">Functionality overview (click to enlarge)</p>
 				</div>
 			</div>
 			<div class="card-op">
-				<img src="images/prototype_2.png" class="mockup-laptop">
+				<div class="img-container">
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://raw.githubusercontent.com/michellewzhang/schema/main/assets/ExampleUsage.png">
+						<img src="images/dialrc_ex.png" class="mockup-laptop">
+					</a>
+					<p class="desc">Example usage (click to enlarge)</p>
+				</div>
 			</div>
 			<div class="card-op">
 				<h3 class="proj-heading">overview</h3>
 				<p class="proj-text">
-				I'm currently working for the DialRC Group (part of CMU Language Technologies Institute) to develop a multifunctional application with React that allows users to build flowchart-based representations of schema using drag-and-drop components and test their implementations in real time with a chatbox UI.
-				<br><br>
-				To learn more about this ongoing project, please <a target="_blank" rel="noopener noreferrer" class="link" href="contact.html"><span class="highlight">contact me</span></a>!
-
+					Schema Builder is an application that allows users to build dialog schema,
+					which are then passed into models trained on a dataset for transfer learning.
+					From September to December 2020, I designed and developed Schema Builder under the guidance of
+					Shikib Mehri and Dr. Maxine Eskenazi (DialRC, Language Technologies Institute, CMU).
+					<br><br>
+					The completed application allows users to drag and drop components and arrows to
+					create a flowchart-style graph representing their schema diagram, and subsequently offers users
+					the ability to test their dialog implementation by interacting with the system through a chatbox.
+					<br><br>
+					The main goals of the project were designing a feasible prototype,
+					developing functional user interfaces, creating a useful
+					data representation, developing the API, and finally integrating the frontend
+					and backend together with a model. Under the guidance of my mentor,
+					I successfully completed all project milestones in three months.
 				</p>
 			</div>
 			<div class="card-op">
 				<h3 class="proj-heading-mini">role</h3>
 				<p class="proj-text">full stack intern, UI designer</p>
 				<h3 class="proj-heading-mini">skills</h3>
-				<!--<p class="proj-text">Javscript &nbsp; &#8729; &nbsp; HTML + CSS &nbsp; &#8729; &nbsp; Prototyping </p>-->
-				<p class="proj-text">coming soon</p>
+				<p class="proj-text">JavaScript &nbsp; &#8729; &nbsp; HTML + CSS &nbsp; &#8729; &nbsp; Python &nbsp;
+					&#8729; &nbsp; API design & integration &nbsp; &#8729; &nbsp; prototyping </p>
 				<h3 class="proj-heading-mini">tools</h3>
-				<!--<p class="proj-text">React JS &nbsp; &#8729; &nbsp; Git &nbsp; &#8729; &nbsp; Figma </p>--> 
-				<p class="proj-text">coming soon</p>
+				<p class="proj-text">React JS &nbsp; &#8729; &nbsp; Tornado &nbsp; &#8729; &nbsp; Postman &nbsp; &#8729;
+					&nbsp; Git &nbsp; &#8729; &nbsp; Figma </p>
+				<h3 class="proj-heading-mini">more</h3>
+				<p class="proj-text"><a target="_blank" rel="noopener noreferrer" class="link"
+						href="https://github.com/michellewzhang/schema"><span class="highlight">Github repo</span></a>
+					&nbsp; / &nbsp;
+					<a target="_blank" rel="noopener noreferrer" class="link"
+						href="https://drive.google.com/drive/u/1/folders/1ebf1QvCNRZt_HEg9QV6cJ4mFV5LzbsiP"><span
+							class="highlight">Concluding paper</span></a>
+				</p>
 			</div>
 		</div>
 		<div class="cards-op">
+			<div class="card-op">
+				<h3 class="proj-heading">motivation: STAR dataset</h3>
+				<p class="proj-text">STAR is a schema-guided,
+					task-oriented dialog dataset that facilitates transfer learning.
+					With the development of novel schema-guided dialog models that use an explicit description of
+					known tasks to generalize to unknown tasks, Schema Builder allows users to build arbitrary schemas,
+					pass them to learning models, and potentially create a dialog model for a new domain.<br><br>
+					Preliminary testing of the schema-guided models for model generalizability and task
+					transfer shows potential for performance improvement on unseen tasks, which provides a baseline
+					for future research in the field. I built a user interface that can, in the future, work in
+					conjunction with zero-shot learning models.
+				</p>
+			</div>
+			<div class="card-op">
+				<div class="img-container">
+					<img src="images/dialog_ex.png" class="mockup">
+					<p class="desc">Example flowchart</p>
+				</div>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">prototyping</h3>
+				<p class="proj-text"><a target="_blank" rel="noopener noreferrer" class="link"
+						href="https://www.figma.com/proto/VUSfLP1F9TkdU9fycB3JRC/Dialog-Prototype?node-id=9%3A0&scaling=scale-down"><span
+							class="highlight">Link to Figma prototype</span></a></p>
+
+				<p class="proj-text">I used Figma to prototype the main features and proposed navigation of the
+					application. Two frames from the prototype are shown below: first is the landing page, and second is
+					a snapshot of the dialog builder in action. In this design, I focused on incorporating elements of
+					material design to form a clean and intuitive UI.
+				</p>
+			</div>
 			<div class="card-op">
 				<h3 class="proj-heading">responsibilities</h3>
 				<p class="proj-text"></p>
@@ -97,23 +156,104 @@
 				</ul>
 			</div>
 			<div class="card-op">
-				<h3 class="proj-heading">prototyping</h3>
-				<p class="proj-text"><a target="_blank" rel="noopener noreferrer" class="link" href="https://www.figma.com/proto/VUSfLP1F9TkdU9fycB3JRC/Dialog-Prototype?node-id=9%3A0&scaling=scale-down"><span class="highlight">Link to Figma prototype</span></a></p>
-				
-				<p class="proj-text">I used Figma to prototype the main features and proposed navigation of the application. Two frames from the prototype are shown above: first is the landing page, and second is a snapshot of the dialog builder in action. In this design, I focused on incorporating elements of material design to form a clean and intuitive UI. 
+				<div class="img-container">
+					<img src="images/prototype_1.png" class="mockup-laptop">
+				</div>
+			</div>
+			<div class="card-op">
+				<div class="img-container">
+					<img src="images/prototype_2.png" class="mockup-laptop">
+				</div>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">frontend</h3>
+				<p class="proj-text">The UI could be broken down into two components: the drag and drop dialog builder
+					area,
+					and the messaging area.
+					For the drag-drop area, I built upon the React Flow library, which contains useful
+					functions that aided during the data representation phase of the project.
+					Retrospectively, during this phase, one of the main challenges was navigating the React framework,
+					since it was a relatively new skill, but having the hands-on learning experience was helpful.
 				</p>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">data representation</h3>
+				<p class="proj-text">After the majority of frontend development was complete,
+					I needed to design a data representation that would be useful for passing to the backend.
+					Given a sample data object from my mentor, I logged my output in the console to ensure that
+					it matched the target output. Data I needed to keep track of included message exchange history,
+					nodes and edges in the graph, exact connections between nodes, and unique user IDs.
+				</p>
+			</div>
+			<div class="card-op">
+				<div class="img-container">
+					<img src="images/data_rep.png" class="mockup-laptop">
+					<p class="desc">JSON data object</p>
+				</div>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">backend</h3>
+				<p class="proj-text">Before beginning any API development, I
+					needed to read documentation on the framework my mentor suggested using: Python Tornado.
+					When I began the project, one of my personal goals was to improve my understanding of
+					backend development and gain hands-on experience developing my own API.
+					The API I developed for Schema Builder stores the user and system message
+					exchange history as well as the saved schema. Each user is defined by a unique ID generated
+					on the frontend, which helps the backend track what data belongs to each user.
+				</p>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">integration</h3>
+				<div class="img-container">
+					<img src="images/integration.png" class="mockup-laptop">
+				</div>
+				</p>
+			</div>
+			<div class="card-op">
+				<h3 class="proj-heading">incorporating the model</h3>
+				<div class="img-container">
+					<img src="images/model.png" class="mockup-laptop">
+				</div>
 			</div>
 		</div>
 		<div class="cards-op">
-			<!--<div class="card-op">
+			<div class="card-op">
 				<h3 class="proj-heading"><img src="images/star.png" class="header-icon-concluding">concluding thoughts
 				</h3>
 				<p class="proj-text">
+					The final product is a complex, multifunctional, and intuitively-designed
+					application that both serves the goal of the project and follows the
+					prototype design I had initially imagined. <br><br>
+
+					Working on the Schema Builder was truly rewarding,
+					because I gained experience in not only full stack development,
+					but also design thinking. By the nature of React and the complexity of
+					what I needed to create, there were several times where I had to
+					find clever ways to pass data, restructure components, and
+					use states to accomplish my task. Working with my mentor on issues
+					I could not resolve helped me understand different ways of
+					thinking about problems; as a result, deep design thinking
+					went into each component I created and developed for Schema Builder. <br><br>
 				</p>
-			</div>-->
+			</div>
+			<div class="card-op">
+				<p class="proj-text">
+					<br><br><br>
+					The entire project allowed me to exercise many of my existing skills and
+					learn many new ones. I put my design skills into practice by creating
+					the prototype; I gained familiarity with React, which is a useful
+					tool that I can add to my frontend skillset; I learned about backend
+					development and built my first API; I improved my understanding of how frontend
+					and backend integrate and coexist; I also gained a basic understanding on the
+					state of current research in dialog systems. Overall, I learned to view web
+					development from varying perspectives at different times in the development process.
+					These skills will invariably prove useful as I progress forward in my career, and I
+					am grateful to have had the opportunity to work with the DialRC Group.
+				</p>
+			</div>
 		</div>
 
-		<p class="copy-normal"> made with &#x2665; by michelle zhang / 2020 &emsp; &emsp; &emsp; &emsp;
+		<p class="copy-normal"> made with &#x2665; by michelle zhang &emsp; &emsp; &emsp; &emsp;
 
 			<script>
 				function openNav() {
@@ -126,8 +266,4 @@
 			</script>
 
 </body>
-
-
-
-
 </html>
